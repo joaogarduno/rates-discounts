@@ -23,26 +23,28 @@ img{
     display: grid;
     grid-template-rows: repeat(3, 33.33%);
     grid-template-columns: 100%;
-    /* margin: 4.5rem 0; */
-    /* margin: 4.5rem auto; */
-    /* place-items: center; */
     /* grid-template-columns: auto; */
+    place-items: center;
     width: 100%; /* Revisar los siguientes width */
 }
 /* SECTION */
 .product-cards{
     /* margin: 0 auto; */
     /* margin: 4.5rem auto; */
-    padding: 0 1.5rem;
+    padding: 2rem 1.5rem;
     width: 100%
 }
 /* ARTICLE */
 .product-item{
+    border: 1px solid #4787E9;
+    border-radius: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     display: grid;
     grid-template-rows: repeat(3, 33.33%);
-    grid-template-columns: auto;
-    /* grid-template-columns: 100%; */
-    padding: .5rem 0;
+    grid-template-columns: 100%;
+    /* grid-template-columns: auto; */
+    padding: 2rem;
+    /* padding: .5rem 0; */
     width: 100%;
 }
 /* *********************************************** */
@@ -81,15 +83,17 @@ img{
 }
 .product-info h2{
     font-size: 2rem;
-    /* padding: 1rem; */
     margin-bottom: 1rem;
-    padding: .5rem 0;
+    padding: .5rem;
+    /* padding: .5rem 0; */
+    /* padding: 1rem; */    
 }
 .product-info small{
     font-size: 1rem;
 }
 .product-info small, .product-info h6{
     padding-left: 1rem;
+    /* padding-left: 1.5rem; */
 }
 .product-info h6{
     font-size: 1.8rem;
@@ -146,7 +150,7 @@ img{
 /* box option button */
 .options-button{
     /* outline: 1px solid red; */
-    /* margin: 1rem 0; */
+    margin: 1rem 0;
     /* padding: 1rem; */
     display: flex;
     justify-content: space-around;
@@ -160,6 +164,8 @@ img{
     justify-content: center;
 }
 /* *********************************************** */
+
+/* *********************************************** */
 /* MEDIAQUERIES */
 @media screen and (min-width: 480px){
     /* MAIN */
@@ -170,20 +176,15 @@ img{
     /* *********************************************** */
 
     /* SECTION */
-    .product-cards{
-        padding: 2rem;
-        /* padding: 1rem; */
-        /* margin: .5rem; */
-        /* margin: 4.5rem auto; */
-    }
+    /* .product-cards{} */
     /* *********************************************** */
     
     /* ARTICLE */
     .product-item{
-        background-color: #E0FBFC;
-        border: 1px solid #4787E9;
+        border: none;
+        background-color: #E0FBFC;        
         border-radius: 10% 10% 10% 10%;
-        padding: 1rem 0;        
+        /* padding: 1rem 0;         */
         /* padding: 0 1.5rem; */
         /* height: 100vh; */
     }
@@ -235,21 +236,25 @@ img{
     .product-cards{
         /* margin: 0 auto; */
         /* margin: 4.5rem auto; */
-        padding: 2.5rem;
-        width: 100%
+        padding: 2.0rem;
+        width: 95%
     }
     /* *********************************************** */
 
     /* ARTICLE */
     .product-item{
+        /* outline: 1px solid red; */
         /* margin: 1rem; */
     }
     /* *********************************************** */
 
     /* producto info */
     .product-info{
+        /* outline: 1px solid red; */
         /* margin: 0 auto; */
-        padding: 0 1.5rem;
+        /* padding: 2rem; */
+        padding: 1rem 2rem;
+        /* padding: 0 1.5rem; */
     }
     .product-info h2{
         font-size: 2.5rem;
@@ -265,5 +270,45 @@ img{
 }
 
 @media screen and (min-width: 768px){
+    /* MAIN */
+    .main-content{}
+    /* *********************************************** */
     
+    /* SECTION */
+    .product-cards{
+        width: 90%;
+        /* width: 100%; */
+    }
+    /* *********************************************** */
+
+    /* ARTICLE */
+    .product-item{
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: auto;
+        /* grid-template-rows: 100%; */
+        place-items: center;
+        padding: 1rem;
+        /* gap: 0 1rem; */
+    }
+    /* *********************************************** */
+
+    /* figure */
+    .product__figure{
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        width: 90%;
+        /* width: auto; */
+    }
+    /* *********************************************** */
+
+    .product-info{
+        /* outline: 1px solid red; */
+        /* align-content: center; */
+        padding: 1rem;
+    }
+    /* *********************************************** */
+
+    /* .options-button{
+        align-self: flex-start;
+    } */
+    /* *********************************************** */
 }
