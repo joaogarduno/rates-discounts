@@ -31,8 +31,7 @@ img{
 }
 /* SECTION */
 .product-cards{
-    border: 1px solid #4787E9;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* margin: 4.5rem auto; */
     padding: 0 1.5rem;
     width: 100%
@@ -63,7 +62,7 @@ img{
 }
 /* *********************************************** */
 
-/* INFO TEXT */
+/* producto info */
 .product-info{
     /* outline: 1px solid red; */
     display: flex;
@@ -165,18 +164,26 @@ img{
 @media screen and (min-width: 480px){
     /* MAIN */
     .main-content{
-        margin: 2rem 0;
+        background-color: #4787E9;
+        /* margin: 2rem 0; */
     }
     /* *********************************************** */
 
     /* SECTION */
     .product-cards{
-        margin: 4.5rem auto;
+        padding: 2rem;
+        /* padding: 1rem; */
+        /* margin: .5rem; */
+        /* margin: 4.5rem auto; */
     }
     /* *********************************************** */
     
-    /* article */
+    /* ARTICLE */
     .product-item{
+        background-color: #E0FBFC;
+        border: 1px solid #4787E9;
+        border-radius: 10% 10% 10% 10%;
+        padding: 1rem 0;        
         /* padding: 0 1.5rem; */
         /* height: 100vh; */
     }
@@ -188,7 +195,7 @@ img{
     }
     /* *********************************************** */
 
-    /* TITLE */
+    /* producto info */
     .product-info h2{
         /* padding: .5rem 0; */
         font-size: 2.2rem;
@@ -210,7 +217,7 @@ img{
     } */
     .product-button{
        align-self: center;
-       width: 60%;
+       /* width: 60%; */
 
     }
     /* *********************************************** */
@@ -220,8 +227,43 @@ img{
         width: 35%;
     }
     /* *********************************************** */
+}
 
-    @media screen and (min-width: 578px){
-        
+@media screen and (min-width: 576px){
+
+    /* SECTION */
+    .product-cards{
+        /* margin: 0 auto; */
+        /* margin: 4.5rem auto; */
+        padding: 2.5rem;
+        width: 100%
     }
+    /* *********************************************** */
+
+    /* ARTICLE */
+    .product-item{
+        /* margin: 1rem; */
+    }
+    /* *********************************************** */
+
+    /* producto info */
+    .product-info{
+        /* margin: 0 auto; */
+        padding: 0 1.5rem;
+    }
+    .product-info h2{
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+    .product-info small{
+        font-size: 1.2rem;
+    }
+    .product-info h6{
+        font-size: 2.5rem;
+    }
+    /* *********************************************** */
+}
+
+@media screen and (min-width: 768px){
+    
 }
